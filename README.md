@@ -1,5 +1,3 @@
-# README: Efficient Data Storage for Customer Dataset
-
 ## Project Overview
 This project involves transforming the **customer_train.csv** dataset into a more storage-efficient format for use in predictive modeling. The transformation adheres to specified data type requirements to reduce memory usage and enhance performance for downstream machine learning tasks.
 
@@ -11,7 +9,7 @@ The dataset contains anonymized information about students and their job-seeking
 The **customer_train.csv** file includes the following columns:
 
 | **Column Name**       | **Description**                                           |
-|------------------------|-----------------------------------------------------------|
+|-----------------------|-----------------------------------------------------------|
 | `student_id`          | A unique ID for each student.                             |
 | `city`                | A code for the city the student lives in.                 |
 | `city_development_index` | A scaled development index for the city.               |
@@ -93,7 +91,7 @@ ds_jobs_transformed['education_level'] = pd.Categorical(ds_jobs_transformed['edu
 
 ## Next Steps
 1. Validate the storage efficiency by comparing memory usage before and after the transformation.
-<div style="display: flex; justify-content: center; align-items: center;">
+<div style="display: flex; justify-content: center; align-items: center; text-align: center;">
   <img src="output/memory_before_processing.png" alt="Memory Usage Before Processing" width="300" style="margin-right: 10px;">
   <img src="output/memory_after_processing.png" alt="Memory Usage After Processing" width="300">
 </div>
